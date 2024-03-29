@@ -1,0 +1,109 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+import { Component1,Component2,Component3} from './compo';
+// const main = () => {
+//   return {
+//     <View style={styles.container}>
+//       <Component1/>
+//     </View>
+//   };
+// }
+
+const fullname = (a,b) => {
+  return a + ' ' + b
+}
+const combile =(m) => {
+  return m + 'xyz'
+}
+function Hello() {
+  return 'hello world'
+}
+// export const Component1
+
+// const Component = () => {
+//   return (
+//     <View>
+//       <Text> MobileApp Welcome! </Text>
+//     </View>
+//   );
+// }
+// const Component2 = () => {
+//   return (
+//     <View>
+//       <Text>MobileApp2 Go To Sleep =.= </Text>
+//     </View>
+//   );
+// }
+// const Component3 = () => {
+//   return (
+//     <View>
+//       <Text>Merry Christmas /_\ *** </Text>
+//     </View>
+//   );
+// }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+const App=()=> {
+  return (
+    <View style={styles.container}>
+      {/* <Text style={styles.red}>Hello World</Text>
+      <Text>{combile(x)}</Text>
+      <Text>{Hello()}</Text>
+      <Component1/>
+      <Component2/> */}
+      {/* <Component3/> */}
+      <StatusBar style="auto" />
+      {/* <View style={styles.box1}><Component1/></View>
+      <View style={styles.box2}><Component2/></View>
+      <View style={styles.box3}><Component3/></View> */}
+      <View style={styles.box}></View>
+      <View style={styles.box1}></View>
+      <View style={styles.box2}></View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    // flexDirection: 'column',
+    backgroundColor: '#a9a9a9',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // marginTop: 50
+    flexDirection: 'row'
+  },
+  red: {
+    color: 'deeppink',
+    fontWeight: 'bold',
+    fontSize: 30
+  
+  },
+  box: {
+    height: 100,
+    width: 100,
+    margin: 4,
+    backgroundColor: 'powderblue'
+  },
+  box1: {
+    height: 100,
+    width: 100,
+    margin: 4,
+    // flex: 1,
+    //  width: 50,
+    //  Height: 50,
+    //height: '15%',
+    backgroundColor: 'red'
+  },
+  box2:{
+    height: 100,
+    width: 100,
+    margin: 4,
+    // flex: 2,
+    backgroundColor: 'green'
+  },
+  box3:{
+    flex: 3,
+    backgroundColor: '#7fffd4'
+  }
+});
+export default App

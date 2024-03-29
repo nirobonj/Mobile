@@ -1,0 +1,49 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+import { Component1,Component2,Component3} from './compo';
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+const App=()=> {
+  return (
+    <View style={styles.container}>
+      <StatusBar style="auto" />
+      <View style={styles.box1}><Component1/></View>
+      <View style={styles.box2}><Component2/></View>
+      <View style={styles.box3}><Component3/></View>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: 'column',
+    backgroundColor: '#a9a9a9',
+    marginTop: 50
+  },
+  red: {
+    color: 'deeppink',
+    fontWeight: 'bold',
+    fontSize: 30
+  
+  },
+  box: {
+    height: 100,
+    width: 100,
+    margin: 4,
+    backgroundColor: 'powderblue'
+  },
+  box1: {
+    flex: 1,
+    backgroundColor: '#fffacd'
+  },
+  box2:{
+    flex: 2,
+    backgroundColor: 'lavender'
+  },
+  box3:{
+    flex: 3,
+    backgroundColor: '#fff0f5'
+  }
+});
+export default App
