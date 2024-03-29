@@ -5,9 +5,9 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Text>Hello Worldddddd</Text>
-      <TextInput  style={styles.input} 
+      {/* <TextInput  style={styles.input} 
                 placeholder='Name'
-            />
+            /> */}
       <StatusBar style="auto" />
     </View>
     
