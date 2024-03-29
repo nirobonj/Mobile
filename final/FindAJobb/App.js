@@ -4,9 +4,13 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hello Worldddddd</Text>
+      <TextInput  style={styles.input} 
+                placeholder='Name'
+            />
       <StatusBar style="auto" />
     </View>
+    
   );
 }
 
@@ -16,5 +20,12 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  input: {
+      borderColor: "gray",
+      width: "80%",
+      borderWidth: 1,
+      borderRadius: 10,
+      padding: 10,
   },
 });
