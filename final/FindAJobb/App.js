@@ -2,7 +2,9 @@ import { StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MyTabs from './tabs/mytabs';
+import MyTabs2 from './tabs/mytabs2';
 import Welcome from './welcome';
+
 
 const MyScreen = () => {
   const [showNextScreen, setShowNextScreen] = useState(false);
