@@ -75,6 +75,7 @@ const styles = StyleSheet.create({
   tex1:{
     marginTop: 20,
     marginLeft: 20,
+    // marginRight: 30,
     fontSize: 20,
     fontWeight: 'bold',
     color: '#262626',

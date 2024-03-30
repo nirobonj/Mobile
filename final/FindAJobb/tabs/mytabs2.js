@@ -1,22 +1,24 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import HomeScreen from '../screens/home';
 import SettingsScreen from '../screens/setting';
+
 import { Ionicons } from "@expo/vector-icons";
+// import SettingsScreen from '../screens/setting';
 
 const Tab = createBottomTabNavigator();
 
-export default function MyTabs({ handleGoBack }) {
+export default function MyTabs2({ handleGoBack }) {
     return (
       <Tab.Navigator
         screenOptions={({ route }) => ({
           headerStyle: {
-            backgroundColor: '#6a5acd'
+            backgroundColor: '#f4511e'
           },
           headerTintColor: '#fff',
           headerTitleStyle: {
             fontWeight: 'bold'
           },
-          tabBarActiveTintColor: '#6a5acd',
+          tabBarActiveTintColor: 'tomato',
           tabBarInactiveTintColor: 'gray',
           tabBarIcon: ({ color }) => {
             let iconName;
