@@ -62,6 +62,7 @@
 // };
 
 // export default MyScreen;
+import { StyleSheet, Text, View } from 'react-native';
 import React, { useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import MyTabs from './tabs/mytabs';
@@ -92,5 +93,14 @@ const MyScreen = () => {
     </NavigationContainer>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
 
 export default MyScreen;
+
