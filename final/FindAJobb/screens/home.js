@@ -7,9 +7,13 @@ import { StyleSheet, View, Text, TouchableOpacity, Image } from "react-native";
 //   // const handleGoToDetails = () => {
 //   //   navigation.navigate('MyTabs2'); // แก้ชื่อหน้าเป็นชื่อที่ถูกต้องที่ใช้ในการนำทาง
 //   // };
+// export default function HomeScreen({ navigation }) {
+//   const handleGoToDetails = () => {
+//     navigation.navigate("DetailScreen"); // ตรวจสอบว่าชื่อหน้า MyTabs2 ถูกต้อง
+//   };
 export default function HomeScreen({ navigation }) {
-  const handleGoToDetails = () => {
-    navigation.navigate("DetailScreen"); // ตรวจสอบว่าชื่อหน้า MyTabs2 ถูกต้อง
+  const handleGoToDetails = (classValue) => {
+    navigation.navigate("DetailScreen", { classValue });
   };
 
   return (
@@ -35,7 +39,7 @@ export default function HomeScreen({ navigation }) {
             <Text style={styles.buttonText}>ดูรายละเอียด</Text>
           </TouchableOpacity> */}
           <TouchableOpacity style={styles.button} onPress={handleGoToDetails}>
-            <Text style={styles.buttonText} class={1}>ดูรายละเอียด</Text>
+            <Text style={styles.buttonText} class={1} onPress={() => handleGoToDetails(1)}>ดูรายละเอียด </Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -50,7 +54,7 @@ export default function HomeScreen({ navigation }) {
           Developer, System Analyst
           </Text>
           <TouchableOpacity style={styles.button} onPress={handleGoToDetails}>
-            <Text style={styles.buttonText}>ดูรายละเอียด</Text>
+            <Text style={styles.buttonText} class={2} onPress={() => handleGoToDetails(2)}>ดูรายละเอียด</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -65,7 +69,7 @@ export default function HomeScreen({ navigation }) {
           QA (Software Tester)
           </Text>
           <TouchableOpacity style={styles.button} onPress={handleGoToDetails}>
-            <Text style={styles.buttonText}>ดูรายละเอียด</Text>
+            <Text style={styles.buttonText } class={3} onPress={() => handleGoToDetails(3)}>ดูรายละเอียด</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -80,7 +84,7 @@ export default function HomeScreen({ navigation }) {
           IOT,Mobile App,Web Application developer
           </Text>
           <TouchableOpacity style={styles.button} onPress={handleGoToDetails}>
-            <Text style={styles.buttonText}>ดูรายละเอียด</Text>
+            <Text style={styles.buttonText} class={4} onPress={() => handleGoToDetails(4)}>ดูรายละเอียด</Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -95,7 +99,7 @@ export default function HomeScreen({ navigation }) {
           Software engineer Hardware engineer Programmer
           </Text>
           <TouchableOpacity style={styles.button} onPress={handleGoToDetails}>
-            <Text style={styles.buttonText}>ดูรายละเอียด</Text>
+            <Text style={styles.buttonText} class={5} onPress={() => handleGoToDetails(5)}>ดูรายละเอียด</Text>
           </TouchableOpacity>
         </View>
       </View>

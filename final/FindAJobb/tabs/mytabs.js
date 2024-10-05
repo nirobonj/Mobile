@@ -224,13 +224,13 @@ export default function MyTabs({ handleGoBack }) {
           title: 'ประวัติส่วนตัว'
         }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name="Settings"
         component={SettingsScreen}
         options={{
           title: 'ตั้งค่า'
         }}
-      />
+      /> */}
       
     </Tab.Navigator>
   );

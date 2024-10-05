@@ -9,15 +9,24 @@ import Welcome from './welcome';
 const MyScreen = () => {
   const [showNextScreen, setShowNextScreen] = useState(false);
 
-  const handlePress = () => {
+  // const handlePress = () => {
+  //   setShowNextScreen(true);
+  // };
+
+  // const handleGoBack = () => {
+  //   setShowNextScreen(false);
+  // };
+  // const navigateToTabs = () => {
+  //   setShowNextScreen(true);
+  // };
+  const handlePress = (event) => {
+    event.persist(); // เพิ่มเพื่อแก้ไขปัญหา Warning
     setShowNextScreen(true);
   };
 
-  const handleGoBack = () => {
+  const handleGoBack = (event) => {
+    event.persist(); // เพิ่มเพื่อแก้ไขปัญหา Warning
     setShowNextScreen(false);
-  };
-  const navigateToTabs = () => {
-    setShowNextScreen(true);
   };
 
   return (
